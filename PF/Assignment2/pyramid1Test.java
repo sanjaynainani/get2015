@@ -7,8 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 
-
-public class Assignment1Test {
+public class pyramid1Test {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -26,16 +25,20 @@ public class Assignment1Test {
 	public void tearDown() throws Exception {
 	}
 
+	//normal test case
 	@Test
-	public void mytest()
-	 {
-		Assignment1 obj=new Assignment1();
-		
-		int u= obj.convertBinaryToOctal(1011100);
-		
-		assertEquals("This is correct", 134,u);
-		
-		
-	 }
+	public void testPrintPyramid() {
+		pyramid1 testObj1 = new pyramid1();
+		String[] expected = {"12345"," 1234","  123","   12","    1"};
+		assertEquals(expected, testObj1.printPyramid(5));
+	}
 
+	
+	//initial test case
+	@Test
+	public void testInitialPrintPyramid() {
+		pyramid1 testObj1 = new pyramid1();
+		String[] expected = {"1"};
+		assertEquals(expected, testObj1.printPyramid(1));
+		}
 }
