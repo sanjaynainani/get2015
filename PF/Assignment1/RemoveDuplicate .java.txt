@@ -1,0 +1,36 @@
+package removeDuplicate;
+public class RemoveDuplicate 
+{
+	public int[] removeDuplicate1(int input[], int n)
+	{
+		int length = input.length;
+		int[] unique=new int[n];
+		int[] flag=new int[n];
+		int k=0;
+	    for (int i = 0; i < length; i++) {
+	       flag[input[i]]=0;
+	    }
+	    for(int i=0;i< length; i++)
+	    {
+	    	if(flag[input[i]]!=1)
+	    	{
+	    		unique[k]=input[i];
+	    		k++;
+	    		flag[input[i]]=1;
+	    	}
+	    	
+	    }
+	    for(int i=0;i<k;i++)
+	    {
+	    	System.out.print(unique[i]);
+	    }
+	    return unique;
+	}
+	public static void main(String args[])
+	{
+		int a[]={2,5,4,6,8,5,9,3,3,6,3,9,1};
+		RemoveDuplicate obj= new RemoveDuplicate();
+		obj.removeDuplicate1(a,13);
+		
+	}
+}
