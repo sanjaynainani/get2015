@@ -11,7 +11,7 @@ import org.junit.Test;
  */
 
 /**
- * @author Amit
+ * @author sanjay
  *
  */
 public class CircleTest {
