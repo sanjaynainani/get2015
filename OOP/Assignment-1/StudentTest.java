@@ -7,11 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * 
- */
-
-/**
- * @author Amit
+ * @author Sanjay
  *
  */
 public class StudentTest {
