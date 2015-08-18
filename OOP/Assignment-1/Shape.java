@@ -1,9 +1,7 @@
-/**
- * 
- */
+
 
 /**
- * @author Amit
+ * @author Sanjay
  *
  */
 public interface Shape {
