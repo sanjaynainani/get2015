@@ -1,9 +1,6 @@
-/**
- * 
- */
 
 /**
- * @author Amit
+ * @author Sanjay
  *
  */
 public class Square implements Shape {
