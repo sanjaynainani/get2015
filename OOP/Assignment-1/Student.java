@@ -1,5 +1,5 @@
 /**
- * @author Amit
+ * @author Sanjay
  *
  */
 public class Student extends Person {
