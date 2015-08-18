@@ -1,6 +1,6 @@
 
 /**
- * @author Amit
+ * @author Sanjay
  *
  */
 public class Person {
